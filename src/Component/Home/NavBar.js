@@ -5,10 +5,10 @@ import Navbar from "react-bootstrap/Navbar";
 import Logo from "../../img/logo.svg";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { useEffect, useState } from "react";
+import { CiLinkedin } from "react-icons/ci";
 
 export const NavBar = () => {
   const [scroll, setScroll] = useState(false);
@@ -66,13 +66,13 @@ export const NavBar = () => {
 
           <div className="flex flex-col sm:flex-row items-center gap-3 ml-auto mt-3 mt-sm-0">
             <div className="flex gap-3">
-              <a href="#" className="text-white hover:text-purple-400">
+              <a href="https://github.com/dashboard" className="text-white hover:text-purple-400">
                 <AiFillGithub size={20} />
               </a>
-              <a href="#" className="text-white hover:text-purple-400">
-                <AiOutlineTwitter size={20} />
+              <a href="https://www.linkedin.com/in/vyom-sagar-606729213/" className="text-white hover:text-purple-400">
+                <CiLinkedin size={20} />
               </a>
-              <a href="#" className="text-white hover:text-purple-400">
+              <a href="https://www.instagram.com/vyomsagar180/" className="text-white hover:text-purple-400">
                 <AiFillInstagram size={20} />
               </a>
             </div>
