@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { NavBar } from './Component/Home/NavBar.js';
 import { Home } from './Component/Home/Home1.js';
-import { Test } from './Component/Home/Test.js';
 import { Skills } from './Component/Skills/Skills.js';
 import { Projects } from './Component/Projects/Projects.js';
 import { Resume } from './Component/Resume/Resume.js';
