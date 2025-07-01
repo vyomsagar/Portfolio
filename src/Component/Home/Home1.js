@@ -1,16 +1,16 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../img/home-main.svg";
-import Particle from "../Component/Particle";
-import Type from "../Component/Type";
+import homeLogo from "../../img/home-main.svg";
+import Particle from "../Particle";
+import Type from "./Type";
 import { Home2 } from "./Home2";
 import { Home3 } from "./Home3";
 
 
 export const Home = () => {
   return (
-    <section>
-      <Container fluid className=" text-white z-10 bg-black" id="home">
+    <section className="bg-black">
+      <Container fluid className=" text-white z-10" id="home">
         <Particle />
         <Container className="flex flex-row mt-[10%]">
           <Row>

@@ -1,11 +1,11 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import simg1 from "../img/simg1.svg";
-import simg2 from "../img/simg2.svg";
-import simg3 from "../img/simg3.svg";
-import pp1 from "../img/pp1.svg";
-import sp1 from "../img/sp1.svg";
-import Textp1 from "../img/textp1.svg";
+import simg1 from "../../img/simg1.svg";
+import simg2 from "../../img/simg2.svg";
+import simg3 from "../../img/simg3.svg";
+import pp1 from "../../img/pp1.svg";
+import sp1 from "../../img/sp1.svg";
+import Textp1 from "../../img/textp1.svg";
 // import pp1 from "../img/pp1.svg";
 // import pp1 from "../img/pp1.svg";
 // import pp1 from "../img/pp1.svg";

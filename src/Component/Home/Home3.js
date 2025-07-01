@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../img/avtar.svg";
+import myImg from "../../img/avtar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -11,7 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export const Home3 = () => {
   return (
-    <Container fluid className="home-about-section text-white" id="about">
+    <Container fluid className="home-about-section bg-black text-white" id="about">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">

@@ -1,15 +1,26 @@
-
 import './App.css';
-import { NavBar } from './Component/NavBar.js';
-import { Home } from './Component/Home1.js';
-import { Test } from './Component/Test.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { NavBar } from './Component/Home/NavBar.js';
+import { Home } from './Component/Home/Home1.js';
+import { Test } from './Component/Home/Test.js';
+import { Skills } from './Component/Skills/Skills.js';
+import { Projects } from './Component/Projects/Projects.js';
+import { Resume } from './Component/Resume/Resume.js';
 
 function App() {
   return (
-    <div className="App bg-black text-whit z-10">
-       <NavBar />
-      <Home /> 
-      {/*<Test /> */}
+    <div className="App bg-black text-white z-10">
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/test" element={<Test />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
