@@ -1,7 +1,6 @@
 import Particle from "../Particle";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-import javai from "../../img/java.svg";
 import { skillsDataLanguage, skillsDataFrontend, skillsDataAdditional, skillsDataBackend, skillsDataDatabase } from "./skillsData.js";
 
 
