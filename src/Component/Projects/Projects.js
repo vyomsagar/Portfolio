@@ -1,144 +1,57 @@
-import Particle from "../Particle";
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
+// src/pages/Projects.js or wherever you store this
+import { projectData } from "./projectsData.js";
 
 export const Projects = () => {
   return (
-    <div className="relative min-h-screen w-full bg-black text-white">
-      <Particle />
-      <Container className="pt-[10%]">
-        <h1 className="text-3xl text-center mb-8 underline">My Projects</h1>
-        <Row className="justify-content-center text-center">
-          <Col md={4} className="my-4">
-            <Card
-              style={{
-                width: "18rem",
-                background: "transparent",
-                border: "1px solid white",
-                color: "white",
-              }}
-            >
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card's content.
-                </Card.Text>
-                <Button className="mx-2" variant="primary">GitHub</Button>
-                <Button className="mx-2" variant="primary">Demo</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={4} className="my-4">
-            <Card
-              style={{
-                width: "18rem",
-                background: "transparent",
-                border: "1px solid white",
-                color: "white",
-              }}
-            >
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card's content.
-                </Card.Text>
-                <Button className="mx-2" variant="primary">GitHub</Button>
-                <Button className="mx-2" variant="primary">Demo</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={4} className="my-4">
-            <Card
-              style={{
-                width: "18rem",
-                background: "transparent",
-                border: "1px solid white",
-                color: "white",
-              }}
-            >
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card's content.
-                </Card.Text>
-                <Button className="mx-2" variant="primary">GitHub</Button>
-                <Button className="mx-2" variant="primary">Demo</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-        <Row className="justify-content-center text-center">
-          <Col md={4} className="my-4">
-            <Card
-              style={{
-                width: "18rem",
-                background: "transparent",
-                border: "1px solid white",
-                color: "white",
-              }}
-            >
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={4} className="my-4">
-            <Card
-              style={{
-                width: "18rem",
-                background: "transparent",
-                border: "1px solid white",
-                color: "white",
-              }}
-            >
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col md={4} className="my-4">
-            <Card
-              style={{
-                width: "18rem",
-                background: "transparent",
-                border: "1px solid white",
-                color: "white",
-              }}
-            >
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make
-                  up the bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
+    <div className="w-full min-h-screen text-white bg-black px-6 py-12">
+      <h1 className="text-4xl font-bold text-center mb-10 underline">
+        My Projects
+      </h1>
+      <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        {projectData.map((project, idx) => (
+          <div
+            key={idx}
+            className="bg-zinc-900 border border-purple-500 rounded-xl p-5 shadow hover:shadow-lg transition duration-300"
+          >
+            <img
+              src={project.img}
+              alt={project.title}
+              className="w-full h-48 object-contain mb-4"
+            />
+            <h2 className="text-2xl font-semibold text-purple-400 mb-2">
+              {project.title}
+            </h2>
+            <p className="mb-4 text-sm text-gray-300">{project.description}</p>
+            <div className="flex flex-wrap gap-2 text-xs text-white mb-4">
+              {project.tech.map((t, i) => (
+                <span key={i} className="bg-purple-700 px-2 py-1 rounded">
+                  {t}
+                </span>
+              ))}
+            </div>
+            <div className="flex gap-4">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-purple-400 hover:underline"
+              >
+                GitHub
+              </a>
+              {project.live && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-purple-400 hover:underline"
+                >
+                  Live Demo
+                </a>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
