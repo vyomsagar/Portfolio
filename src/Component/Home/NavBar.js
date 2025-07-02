@@ -39,7 +39,7 @@ export const NavBar = () => {
       expanded={expanded}
       onToggle={(val) => setExpanded(val)}
       expand="lg"
-      className={`fixed top-0 w-full z-50 bg-black bg-opacity-80 shadow-md ${
+      className={`navbar-dark fixed top-0 w-full z-50 bg-black bg-opacity-80 shadow-md ${
         scroll ? "backdrop-blur-sm" : ""
       }`}
     >
