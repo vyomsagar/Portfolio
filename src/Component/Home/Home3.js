@@ -11,7 +11,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export const Home3 = () => {
   return (
-    <Container fluid className="home-about-section bg-black text-white" id="about">
+    <Container
+      fluid
+      className="home-about-section bg-black text-white"
+      id="about"
+    >
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
@@ -19,37 +23,30 @@ export const Home3 = () => {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I’m a passionate developer who enjoys building practical and
+              creative solutions for the web.
               <br />
-              <br />I am fluent in classics like
+              <br />I have a good understanding of
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> C, C++, Java, and JavaScript. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My interests lie in developing modern &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple">web applications</b> 
+              </i>
+              <br />
+              <br />I also explore backend development using{" "}
+              <b className="purple">Node.js</b> and enjoy building UIs using
+              modern libraries like
+              <i>
+                <b className="purple"> React.js and Tailwind CSS</b>.
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I'm continuously learning and love contributing to projects when I
+              can.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -58,6 +55,7 @@ export const Home3 = () => {
             </Tilt>
           </Col>
         </Row>
+
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
@@ -111,5 +109,5 @@ export const Home3 = () => {
       </Container>
     </Container>
   );
-}
+};
 export default Home3;

@@ -3,16 +3,14 @@ import { Link, useLocation } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Logo from "../../img/logo.svg";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import { CiLinkedin } from "react-icons/ci";
 
 export const NavBar = () => {
   const [scroll, setScroll] = useState(false);
   const location = useLocation(); // track route for active link
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -38,6 +36,8 @@ export const NavBar = () => {
 
   return (
     <Navbar
+      expanded={expanded}
+      onToggle={(val) => setExpanded(val)}
       expand="lg"
       className={`fixed top-0 w-full z-50 bg-black bg-opacity-80 shadow-md ${
         scroll ? "backdrop-blur-sm" : ""
@@ -47,32 +47,65 @@ export const NavBar = () => {
         <Navbar.Brand as={Link} to="/">
           <img src={Logo} alt="Vyom Sagar" className="h-10 w-auto" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-white" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          className="border-white"
+        />
+
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto gap-2 mt-2 mt-lg-0">
-            <Nav.Link as={Link} to="/" className={navLinkClass("/")}>
+            <Nav.Link
+              as={Link}
+              to="/"
+              onClick={() => setExpanded(false)}
+              className={navLinkClass("/")}
+            >
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/skills" className={navLinkClass("/skills")}>
+            <Nav.Link
+              as={Link}
+              to="/skills"
+              onClick={() => setExpanded(false)}
+              className={navLinkClass("/skills")}
+            >
               Skills
             </Nav.Link>
-            <Nav.Link as={Link} to="/projects" className={navLinkClass("/projects")}>
+            <Nav.Link
+              as={Link}
+              to="/projects"
+              onClick={() => setExpanded(false)}
+              className={navLinkClass("/projects")}
+            >
               Projects
             </Nav.Link>
-            <Nav.Link as={Link} to="/resume" className={navLinkClass("/resume")}>
+            <Nav.Link
+              as={Link}
+              to="/resume"
+              onClick={() => setExpanded(false)}
+              className={navLinkClass("/resume")}
+            >
               Resume
             </Nav.Link>
           </Nav>
 
           <div className="flex flex-col sm:flex-row items-center gap-3 ml-auto mt-3 mt-sm-0">
             <div className="flex gap-3">
-              <a href="https://github.com/dashboard" className="text-white hover:text-purple-400">
+              <a
+                href="https://github.com/dashboard"
+                className="text-white hover:text-purple-400"
+              >
                 <AiFillGithub size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/vyom-sagar-606729213/" className="text-white hover:text-purple-400">
+              <a
+                href="https://www.linkedin.com/in/vyom-sagar-606729213/"
+                className="text-white hover:text-purple-400"
+              >
                 <CiLinkedin size={20} />
               </a>
-              <a href="https://www.instagram.com/vyomsagar180/" className="text-white hover:text-purple-400">
+              <a
+                href="https://www.instagram.com/vyomsagar180/"
+                className="text-white hover:text-purple-400"
+              >
                 <AiFillInstagram size={20} />
               </a>
             </div>
