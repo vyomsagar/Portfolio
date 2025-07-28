@@ -1,9 +1,7 @@
-
-
 import javai from "../../img/java.svg";
 import ci from "../../img/ci.svg";
 import c from "../../img/c.svg";
-
+import flask from "../../img/flask.svg";
 import html from "../../img/html-1.svg";
 import css from "../../img/css-3.svg";
 import js from "../../img/javascript-1.svg";
@@ -20,7 +18,6 @@ import nodejs from "../../img/nodejs-1.svg";
 import mysql from "../../img/mysql-logo-pure.svg";
 import mongo from "../../img/mongodb-icon-2.svg";
 import reactBootstrap from "../../img/React Bootstrap.svg";
-
 
 export const skillsDataLanguage = [
   {
@@ -45,8 +42,6 @@ export const skillsDataLanguage = [
     level2: "Complete OOPs",
   },
 ];
-
-
 
 export const skillsDataFrontend = [
   {
@@ -79,7 +74,6 @@ export const skillsDataFrontend = [
   },
 ];
 
-
 export const skillsDataBackend = [
   {
     title: "PHP",
@@ -94,6 +88,13 @@ export const skillsDataBackend = [
     img: nodejs,
     level1: "Beginner to Intermediate",
     level2: "Express.js, REST APIs (In Progress)",
+  },
+  {
+    title: "Flask",
+    desc: "Experience in building RESTful APIs using Flask. Created basic backend logic and handled routing, requests, and JSON responses.",
+    img: flask,
+    level1: "Beginner to Intermediate",
+    level2: "Flask, REST APIs",
   },
 ];
 
