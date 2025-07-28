@@ -24,7 +24,7 @@ export const projectData = [
   },
    {
     title: "Snake Game",
-    description: "Classic snake game built using HTML, CSS, and JavaScript. Fully playable in-browser.",
+    description: "Classic snake game built using HTML, CSS, and JavaScript. Fully playable in-browser. Use Keybord to play",
     img: snake,
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/vyomsagar/SnakeGame",
