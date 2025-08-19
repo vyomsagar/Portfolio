@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import gsap from "gsap";
+// import gsap from "gsap";
 import Particle from "../Particle";
 import Type from "./Type";
 import { Home2 } from "./Home2";
@@ -8,50 +8,32 @@ import { Home3 } from "./Home3";
 import "@google/model-viewer";
 
 export const Home = () => {
-  // useEffect(() => {
-  //   // Inject the Botpress scripts dynamically
-  //   const script1 = document.createElement("script");
-  //   script1.src = "https://cdn.botpress.cloud/webchat/v3.2/inject.js";
-  //   script1.async = true;
-  //   document.body.appendChild(script1);
 
-  //   const script2 = document.createElement("script");
-  //   script2.src =
-  //     "https://files.bpcontent.cloud/2025/08/19/20/20250819200244-10I4YZUD.js";
-  //   script2.defer = true;
-  //   document.body.appendChild(script2);
-
-  //   // Cleanup when component unmounts
-  //   return () => {
-  //     document.body.removeChild(script1);
-  //     document.body.removeChild(script2);
-  //   };
-  // }, []);
 
   const nameRef = useRef([]);
   nameRef.current = [];
 
   const name = "VYOM SAGAR".split("");
 
-  const handleHoverIn = () => {
-    gsap.to(nameRef.current, {
-      x: () => gsap.utils.random(-20, 20),
-      y: -20,
-      duration: 0.5,
-      stagger: 0.05,
-      ease: "power2.out",
-    });
-  };
+  // const handleHoverIn = () => {
+  //   gsap.to(nameRef.current, {
+  //     x: () => gsap.utils.random(-20, 20),
+  //     y: -20,
+  //     duration: 0.5,
+  //     stagger: 0.05,
+  //     ease: "power2.out",
+  //   });
+  // };
 
-  const handleHoverOut = () => {
-    gsap.to(nameRef.current, {
-      x: 0,
-      y: 0,
-      duration: 0.5,
-      stagger: 0.05,
-      ease: "power2.out",
-    });
-  };
+  // const handleHoverOut = () => {
+  //   gsap.to(nameRef.current, {
+  //     x: 0,
+  //     y: 0,
+  //     duration: 0.5,
+  //     stagger: 0.05,
+  //     ease: "power2.out",
+  //   });
+  // };
 
   return (
     <section className="bg-black">
@@ -68,8 +50,8 @@ export const Home = () => {
               </h1>
 
               <h1
-                onMouseEnter={handleHoverIn}
-                onMouseLeave={handleHoverOut}
+                // onMouseEnter={handleHoverIn}
+                // onMouseLeave={handleHoverOut}
                 className="heading-name"
               >
                 I'M{" "}
