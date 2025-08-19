@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import gsap from "gsap";
 import Particle from "../Particle";
 import Type from "./Type";
 import { Home2 } from "./Home2";
@@ -14,26 +13,6 @@ export const Home = () => {
   nameRef.current = [];
 
   const name = "VYOM SAGAR".split("");
-
-  // const handleHoverIn = () => {
-  //   gsap.to(nameRef.current, {
-  //     x: () => gsap.utils.random(-20, 20),
-  //     y: -20,
-  //     duration: 0.5,
-  //     stagger: 0.05,
-  //     ease: "power2.out",
-  //   });
-  // };
-
-  // const handleHoverOut = () => {
-  //   gsap.to(nameRef.current, {
-  //     x: 0,
-  //     y: 0,
-  //     duration: 0.5,
-  //     stagger: 0.05,
-  //     ease: "power2.out",
-  //   });
-  // };
 
   return (
     <section className="bg-black">
