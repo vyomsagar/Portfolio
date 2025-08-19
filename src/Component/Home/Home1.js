@@ -4,7 +4,6 @@ import Particle from "../Particle";
 import Type from "./Type";
 import { Home2 } from "./Home2";
 import { Home3 } from "./Home3";
-import "@google/model-viewer";
 
 export const Home = () => {
 
