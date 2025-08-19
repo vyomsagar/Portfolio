@@ -22,26 +22,28 @@ import reactBootstrap from "../../img/React Bootstrap.svg";
 export const skillsDataLanguage = [
   {
     title: "Java",
-    desc: "I have strong fundamentals in java and use it regularly for DSA problems.",
+    desc: "Strong in Java with OOPs, DSA problem-solving, and small app development.",
     img: javai,
-    level1: "Advance Level",
-    level2: "Complete OOPs",
+    level1: "Advanced",
+    level2: "OOPs & DSA",
   },
   {
     title: "C",
-    desc: "I have strong fundamentals in java and use it regularly for DSA problems.",
+    desc: "Good fundamentals in C, pointers, memory management, and system-level programming.",
     img: ci,
-    level1: "Advance Level",
-    level2: "Complete OOPs",
+    level1: "Intermediate",
+    level2: "Pointers & Memory",
   },
   {
-    title: "Java",
-    desc: "I have strong fundamentals in java and use it regularly for DSA problems.",
+    title: "C++",
+    desc: "Proficient in C++ with OOPs, STL, templates, and competitive programming.",
     img: c,
-    level1: "Advance Level",
-    level2: "Complete OOPs",
+    level1: "Advanced",
+    level2: "STL & OOPs",
   },
 ];
+
+
 
 export const skillsDataFrontend = [
   {
