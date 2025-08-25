@@ -8,6 +8,11 @@ Live demo: https://portfolio-steel-pi-91.vercel.app/
 
 ## Features
 
+Chatbot Feature
+This portfolio includes an interactive chatbot that you can ask any questions about me — my skills, projects, experience, or anything else related to my work. It provides instant answers to help you learn more and explore the site easily.
+
+Feel free to try it out and interact with the chatbot at any time while browsing!
+
 - Responsive and mobile-optimized design
 - Floating dock navigation with animated icons
 - Skill showcase with dynamic icon cloud
