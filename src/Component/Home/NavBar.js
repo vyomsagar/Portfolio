@@ -109,12 +109,12 @@ export const NavBar = () => {
                 <AiFillInstagram size={20} />
               </a>
             </div>
-            <button
-              className="border-2 border-purple-400 text-white px-3 py-1 rounded-md hover:bg-purple-400 hover:text-black transition"
-              onClick={() => console.log("connect")}
-            >
-              Let's Connect
-            </button>
+            // <button
+            //   className="border-2 border-purple-400 text-white px-3 py-1 rounded-md hover:bg-purple-400 hover:text-black transition"
+            //   onClick={() => console.log("connect")}
+            // >
+            //   Let's Connect
+            // </button>
           </div>
         </Navbar.Collapse>
       </Container>
